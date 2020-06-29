@@ -34,13 +34,13 @@ void dht_command() {
             Serial.print("\r\n");
             break;
         case DHTLIB_ERROR_CHECKSUM:
-            Serial.print("ERR checksum_error\r\n");
+            Serial.print(F("ERR checksum_error\r\n"));
             break;
         case DHTLIB_ERROR_TIMEOUT:
-            Serial.print("ERR timeout_error\r\n");
+            Serial.print(F("ERR timeout_error\r\n"));
             break;
         default:
-            Serial.print("ERR unknown_error\r\n");
+            Serial.print(F("ERR unknown_error\r\n"));
             break;
     }
 }
